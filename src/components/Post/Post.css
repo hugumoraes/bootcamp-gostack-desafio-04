@@ -1,0 +1,58 @@
+.post {
+  background: white;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  padding: 1rem 12px;
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.post:first-child {
+  margin-top: 1rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user .img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: black;
+}
+
+.user .userdata {
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user .userdata h1 {
+  font-size: 1.25rem;
+}
+
+.user .userdata .date {
+  font-size: 1rem;
+}
+
+.content {
+  margin: 1rem 0;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 99%;               
+  background-color:#f0f0f0;
+  height: 2px;
+}

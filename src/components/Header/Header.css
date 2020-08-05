@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  width: 100vw;
+  height: 10vh;
+  background: #4A90E2;  
+  color: #FFFFFF;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header a:hover {
+  color: #f0f0f0;
+}
+
+#facebook {
+  font-size: 2rem;
+  font-weight: bold;
+}

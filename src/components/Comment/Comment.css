@@ -1,0 +1,26 @@
+.comment-data {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.comment-data .img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: black;
+}
+
+.comment-data .comment-content {
+  display: flex;
+  align-items: center;
+  margin: 0 12px;
+  padding: 4px;
+  border-radius: 12px;
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.comment-data .comment-content .bold {
+  font-weight: bold;
+}
