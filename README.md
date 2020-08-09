@@ -36,8 +36,6 @@ Layout doesn't have to be exactly the same, you can use your creativity to chang
 
 Most importantly is that all the elements show on sreen.
 
-The layout of the application is [this link](.github/layout.sketch) that can be open with this free online tool: https://www.figma.com/
-
 On the image below stands out each component that you will create and below the image is the description and resposabilitys of each one:
 
 ![Components](https://raw.githubusercontent.com/Rocketseat/bootcamp-gostack-desafio-04/master/.github/components.png)
