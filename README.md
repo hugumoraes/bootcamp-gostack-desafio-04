@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio 4: Introdução ao React
+  Challenge 4: React introduction
 </h3>
 
 <p align="center">
@@ -20,33 +20,32 @@
   </a>
 </p>
 
-## :rocket: Sobre o desafio
+## :rocket: About the challenge
 
-Crie uma aplicação do zero utilizando **Webpack, Babel, Webpack Dev Server e ReactJS**.
+Make an application from zero using **Webpack, Babel, Webpack Dev Server e ReactJS**.
 
-Nessa aplicação você irá desenvolver uma **interface** semelhante com a do **Facebook** utilizando React.
+In this application you will develop a **interface** such as the **Facebook** using React.
 
-As informações contidas na interface são **estáticas** e não precisam refletir nenhuma API REST ou back-end.
+Informations that are contained in the interface are **static** and don't need to reflect any REST API or back-end.
 
-### Tela da aplicação
+### Application screen
 
-![Facebook](.github/facebook.png)
+![Facebook](https://raw.githubusercontent.com/Rocketseat/bootcamp-gostack-desafio-04/master/.github/facebook.png)
 
-O layout não precisa ficar exatamente igual, você pode utilizar sua criatividade para modificar da maneira que preferir.
+Layout doesn't have to be exactly the same, you can use your creativity to change into the way you like.
 
-O mais importante é que todos elementos apareçam em tela.
+Most importantly is that all the elements show on sreen.
 
-O layout da aplicação está [nesse link](.github/layout.sketch) que pode ser aberto por essa ferramenta gratuita e online: https://www.figma.com/
+The layout of the application is [this link](.github/layout.sketch) that can be open with this free online tool: https://www.figma.com/
 
-### Componentes
+On the image below stands out each component that you will create and below the image is the description and resposabilitys of each one:
 
-Na imagem abaixo destaquei cada componente que você criará e abaixo da imagem está a descrição e responsabilidades de cada um:
+![Components](https://raw.githubusercontent.com/Rocketseat/bootcamp-gostack-desafio-04/master/.github/components.png)
 
-![Componentes](.github/components.png)
+**Header (Yellow):** Responsible to show the logo and the link to access the profile;
 
-**Header (Amarelo):** Responsável por exibir a logo e o link para acessar o perfil;
+**PostList (Green):** Responsible to storage the data on the post listing, this data must be inside the `state`of the component and not a common variable, such as:
 
-**PostList (Verde):** Responsável por armazenar os dados da listagem de post, esses dados devem ficar dentro do `state` do componente e não em uma variável comum, por exemplo:
 
 ```js
 class PostList extends Component {
@@ -79,14 +78,13 @@ class PostList extends Component {
   };
 }
 ```
-
-**Post (Vermelho):** Responsável por exibir os dados do post, esses dados devem vir através de uma propriedade recebida do componente PostList, ou seja, lá no PostList você terá algo assim:
+**Post (Red):** Responsible to show the post data, this data must come through a property received from the component PostList, that meaning, in the PostList you will have something like this:
 
 ```js
 posts.map(post => <Post key={post.id} data={post} />);
 ```
+**Comment (Blue):** Responsible to show a comment. The data of the comments will come through a component property. Inside the Post component you will have a new `.map`to list the post comments:
 
-**Comment (Azul):** Responsável por exibir um comentário. Os dados do comentário virão por uma propriedade do componente. Dentro do componente Post você terá um novo `.map` para listar os comentários do post:
 
 ```js
 data.comments.map(comment => <Comment key={comment.id} data={comment} />);
